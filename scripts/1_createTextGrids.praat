@@ -37,7 +37,7 @@ Create Strings as file list: "allFiles", dirFiles$ + "/*.wav"
 # Select allFiles
 select Strings allFiles
 
-# Count number of stings (this is the iterator for the loop!)
+# Count number of strings (this is the iterator for the loop!)
 numberOfFiles = Get number of strings
 
 # Clear info window just in case
@@ -56,7 +56,7 @@ clearinfo
 # Begin loop ---------------------------------------------------
 #
 
-for i from number to XXXXX
+for i from number to numberOfFiles
 	select Strings allFiles
 	fileName$ = Get string... i
 	prefix$ = fileName$ - ".wav"
